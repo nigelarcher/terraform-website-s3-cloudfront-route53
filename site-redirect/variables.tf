@@ -9,6 +9,8 @@ variable environment {
   default = "default"
 }
 
+variable AWS_ACCOUNT {}
+
 variable domain {}
 variable target {}
 variable duplicate-content-penalty-secret {}
