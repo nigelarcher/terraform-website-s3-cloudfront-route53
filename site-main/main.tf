@@ -22,6 +22,10 @@
 provider "aws" {
   alias  = "${var.region}"
   region = "${var.region}"
+  
+  assume_role {
+    role_arn = "arn:aws:iam::${var.AWS_ACCOUNT}:role/Deployer"
+  }
 }
 
 ################################################################################################################
